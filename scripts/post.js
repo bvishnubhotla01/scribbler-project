@@ -88,3 +88,10 @@ function addComment(comment) {
                 $(document).scrollTop($(document).height());
         }
 }
+
+function signInSignUpButtonClick() {
+        // if (queryString.length > 0) {
+        document.getElementById('f1').action = window.location.href;
+        document.getElementById('f1').target = '_self';
+        // }
+}
