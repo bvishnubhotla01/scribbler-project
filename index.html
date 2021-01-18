@@ -4,12 +4,18 @@
     <!-- TODO: Include Font Awesome file here -->
     <link
       rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
+      href="./styles/font-awesome/css/font-awesome.min.css"
     />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles/index.css" type="text/css" />
-    <link href="./styles/header.css" rel="stylesheet" type="text/css" />
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/common.css" />
     <!-- TODO: Include Google Fonts file here -->
     <link
       href="https://fonts.googleapis.com/css?family=Montez|Roboto|Ubuntu+Mono&display=swap"
@@ -39,7 +45,6 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <style></style>
   </head>
 
   <body>
@@ -69,7 +74,6 @@
 
       <a id="pageTitle" class="logo-title">ScriBBler</a>
       <p class="sub-heading">Explore, Imagine, Create</p>
-
       <!-- Modal -->
       <div
         class="modal fade"
@@ -79,7 +83,7 @@
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h4
@@ -150,7 +154,6 @@
           </div>
         </div>
       </div>
-
       <!-- Modal -->
       <div
         class="modal fade"
@@ -160,7 +163,7 @@
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h4
@@ -270,7 +273,10 @@
           role="dialog"
           id="createPost"
         >
-          <div class="modal-dialog modal-lg" role="document">
+          <div
+            class="modal-dialog modal-lg modal-dialog-centered"
+            role="document"
+          >
             <div class="modal-content">
               <div class="modal-header">
                 <h5
@@ -321,13 +327,7 @@
                 <div
                   class="modal-footer border-top-0 d-flex justify-content-center"
                 >
-                  <button
-                    type="submit"
-                    class="btn btn-success"
-                    style="width: 100px"
-                  >
-                    Create
-                  </button>
+                  <button type="submit" class="btn btn-success">Create</button>
                 </div>
               </form>
             </div>
